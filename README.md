@@ -1,1 +1,1 @@
-Personal site forked from [Minima](https://jekyll.github.io/minima/)
+Personal site
