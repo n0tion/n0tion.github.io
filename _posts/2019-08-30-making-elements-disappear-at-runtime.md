@@ -16,7 +16,7 @@ We've created a component to assist the user in completing the flows with autofi
 
 This little component is present throughout the flow and was built with an unobtrusive minimized state, but it is still visible on the page. It's not a problem in the context of actual users who want play with the application but still have the option to pull up the assistant and get help.
 
-Now the automation tasks does not need this, nor do we want to show it when it's taking screenshots and/or videos.
+But the automation tasks do not require this, nor do we want to show it when programmatically taking screenshots and/or videos.
 
 ### Making the change at run time
 
