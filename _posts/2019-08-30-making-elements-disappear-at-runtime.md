@@ -8,7 +8,7 @@ The importance of the problem in context of what I'm trying to achieve is somewh
 
 ### Automating user flows via Puppeteer 
 
-It's that simple. Puppeteer provides an API that allows you to control a chrome/chromium browser instance by way of the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). 
+It's that simple. Puppeteer is a Node library that provides an API that allows you to control a chrome/chromium browser (headless or full/non-headless) instance by way of the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). 
 
 ### So what's the problem?
 
