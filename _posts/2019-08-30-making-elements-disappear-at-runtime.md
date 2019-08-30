@@ -20,7 +20,7 @@ But the automation tasks do not require this, nor do we want to show it when pro
 
 ### Making the change at run time
 
-We want to build the application with the assistant, but have the option to not show it at runtime in the context of the automation script.
+We want to build the application with the assistant, but have the option to not show it at runtime in context of the automation script.
 
 My initial approach was to use puppeteers evaluate method to inject the rule on the initial load of the page by inserting it into an arbitrary stylesheet:
 
