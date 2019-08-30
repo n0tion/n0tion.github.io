@@ -64,6 +64,6 @@ In our case we're setting the display property of the the assistant component's 
 
 Now, taking a look at the second method we are grabbing the root element of the component it's self via the DOM API's document.querySelector and targeting it by class name. Once we have our element, we simply get it's associated styles and target it's display property; setting our desired value.
 
-Both these methods are dirty and hacky in my opinion, but for my specific use case it's acceptable being that it's for internal user. I ended up going with the second approach beasue it felt somewhat more specific and therefore more controlled.
+Both these methods are dirty and hacky in my opinion, but for my specific use case it's acceptable being that it's for internal use. I ended up going with the second approach becasue it felt somewhat more specific.
 
-I hope to come back in the future and follow-up with a post outlining a better solution. And any fallacies is in these approaches.
+I hope to come back in the future and follow-up with a post outlining a better solution.
