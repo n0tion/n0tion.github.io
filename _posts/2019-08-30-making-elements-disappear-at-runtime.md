@@ -59,8 +59,8 @@ We could add a check by looking at the style sheet's media list and checking tha
     if (sheet.media.mediaText === 'all')
 ```
 
-After grabbing our style sheet we simply insert the rule we wish to see take effect on the page. Internally, this is being inserted into `CSSStyleSheet.cssRules` which is the internal rule list of the style sheet. 
-In our case we're setting the display property of the root element of the component to none. The component is still rendered, it's just simply not displayed on the page. 
+After grabbing our style sheet we simply insert the rule we wish to see take effect on the page. Internally, this is being inserted into `CSSStyleSheet.cssRules` which is the internal rule set of the style sheet. 
+In our case we're setting the display property of the the assistant component's root element to none. The component is still rendered, it's just simply not displayed on the page. 
 
 Now, taking a look at the second method we are grabbing the HTML Element of the component it's self via the DOM API's document.querySelector and targeting it by class name. Once we have our element, we simply get it's associated styles and target it's display property, setting our desired value.
 
