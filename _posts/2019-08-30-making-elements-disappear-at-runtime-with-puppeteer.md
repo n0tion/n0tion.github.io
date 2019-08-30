@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Making Elements Disappear At Runtime"
+title: "Making Elements Disappear At Runtime With Puppeteer"
 ---
 Sometimes we find ourselves needing to make changes at runtime. This is something I've been encountering more as I get into automation via Puppeteer, albeit it's not a common development task for me.
 
