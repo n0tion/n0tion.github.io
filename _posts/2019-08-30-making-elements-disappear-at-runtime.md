@@ -53,7 +53,7 @@ So this is useful for our use case.
 
 Now, for the first approach we are grabbing the list of style sheets currently available on the page. This has a caveat, being that we're basically grabbing an arbitrary stylesheet which may or may not be related to what we're seeing on the page. For example, it may be for print related styles. 
 
-We could add an additional check by looking at the style sheet's media list and checking that the type returns `all` and not `print`, `handheld`, `projection`, etc.
+We could add a check by looking at the style sheet's media list and checking that the type returns `all` and not `print`, `handheld`, `projection`, etc. there by determining whether or not we're inserting rules into a style sheet not related to what we see on the browser:
 
 ```JavaScript
     if (sheet.media.mediaText === 'all')
