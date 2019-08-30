@@ -2,11 +2,11 @@
 layout: post
 title: "Making Elements Disappear At Runtime"
 ---
-Sometimes we find ourselves needing to make changes at runtime. This is something I've been encountering more as I get into automation via puppeteer, albeit it's not a common development task for me.
+Sometimes we find ourselves needing to make changes at runtime. This is something I've been encountering more as I get into automation via Puppeteer, albeit it's not a common development task for me.
 
 The importance of the problem in context of what I'm trying to achieve is somewhat trivial, but it's a trivial issue I hadn't encountered until recently. I found it interesting and I'm sure there are better ways to do it other than the two methods I will go over.
 
-### Automating user flows via puppeteer 
+### Automating user flows via Puppeteer 
 
 It's that simple. Puppeteer provides an API that allows you to control a chrome/chromium browser instance by way of the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). 
 
@@ -22,7 +22,7 @@ But the automation tasks do not require this, nor do we want to show it when pro
 
 We want to build the application with the assistant, but have the option to not show it at runtime in context of the automation script.
 
-My initial approach was to use puppeteers evaluate method to inject the rule on the initial load of the page by inserting it into an arbitrary stylesheet:
+My initial approach was to use Puppeteer's evaluate method to inject the rule on the initial load of the page by inserting it into an arbitrary stylesheet:
 
 ```JavaScript
     await page.evaluate(() => {
