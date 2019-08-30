@@ -14,7 +14,7 @@ It's that simple. Puppeteer is a Node library that provides an API that allows y
 
 We've created a component to assist the user in completing the flows with autofill capabilities. This specific project runs in a test environment in which there are no actual API calls being made to the server, but rather we've created a test utils library to help mock and carry out any actions possible on our live sites.
 
-This little component is present throughout the flow and was built with an unobtrusive minimized state, but it is still visible on the page. It's not a problem in the context of actual users who want play with the application but still have the option to pull up the assistant and get help.
+This little component is present throughout the flow and was built with an unobtrusive minimized state, but it is still visible on the page. It's not a problem in context of actual users who want play with the application but still have the option to pull up the assistant and get help.
 
 But the automation tasks do not require this, nor do we want to show it when programmatically taking screenshots and/or videos.
 
