@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lazy Loading Images with Vue Render Functions"
+title: "Lazy Loading Images With Vue Render Functions"
 ---
 ![LazyCat](https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=640&w=426)
 
