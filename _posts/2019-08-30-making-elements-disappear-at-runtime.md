@@ -4,7 +4,7 @@ title: "Making Elements Disappear At Runtime"
 ---
 Sometimes we find ourselves needing to make changes at runtime. This is something I've been encountering more as I get into automation via puppeteer, albeit it's not a common development task for me.
 
-The importance of the problem in context of what I'm trying to achieve is somewhat trivial, but it's a trivial issue I hadn't encountered until recently. I found it interesting and I'm sure there's better ways to do it other than the two methods I will go over.
+The importance of the problem in context of what I'm trying to achieve is somewhat trivial, but it's a trivial issue I hadn't encountered until recently. I found it interesting and I'm sure there are better ways to do it other than the two methods I will go over.
 
 ### Automating user flows via puppeteer 
 
