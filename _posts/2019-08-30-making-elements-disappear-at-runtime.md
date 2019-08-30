@@ -4,11 +4,11 @@ title: "Making Elements Disappear At Runtime"
 ---
 Sometimes we find ourselves needing to make changes at runtime. This is something I've been encountering more as I get into automation via puppeteer, albeit it's not a common development task for me.
 
-The importance of the issue in context of the of what I'm trying to achieve is somewhat trivial, but it's a trivial issue I hadn't encountered until recently. I found it interesting and I'm sure there's better ways to do it other than the two methods I will cover.
+The importance of the problem in context of the of what I'm trying to achieve is somewhat trivial, but it's a trivial issue I hadn't encountered until recently. I found it interesting and I'm sure there's better ways to do it other than the two methods I will go over.
 
 ### Automating user flows via puppeteer 
 
-It's that simple. Puppeteer provides a nice little API that allows you to control chrome/chromium browser by way of the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). 
+It's that simple. Puppeteer provides an API that allows you to control a chrome/chromium browser instance by way of the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). 
 
 ### So what's the problem?
 
@@ -47,7 +47,7 @@ Both approaches landed me with the same result. But let's unpack the approaches 
 page.evaluate(pageFunction: <function|string>, ...args): <Promise>
 ```
 
-page.evaluate() takes a callback with optional parameters, allowing the callback to execute in context of the page itself.
+`page.evaluate()` takes a callback with optional parameters, allowing the callback to execute in context of the page itself.
 
 So this is useful for our use case.
 
