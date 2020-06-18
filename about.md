@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-**Hi,**
+**Hi, I'm Luis Felipe**
 
-I'm Luis Felipe and I am a Software Engineer based in New York. Currently, I am a developer at eGifter specializing in frontend technologies.
+I'm a Software Engineer based in New York. I like working with web technologies, specifically Vue, Node, and TypeScript/JavaScript. 
