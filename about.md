@@ -6,4 +6,4 @@ permalink: /about/
 
 **Hi, I'm Felipe**
 
-I'm a New York based Software Engineer specializing in modern web technologies. 
+I'm a New York based developer specializing in modern web technologies. 
