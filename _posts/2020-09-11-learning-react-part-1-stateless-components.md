@@ -2,15 +2,11 @@
 layout: post
 title: "Learning React Part 1: Stateless Components"
 ---
-At first glance the way components are defined in React seemed odd coming from a Vue background. Mostly due to its use of JSX, although Vue render functions can also make use of JSX.
+At first glance React components seem odd coming from a Vue background. Just like in Vue, React has more than one way to define components. Being that most SPAs are basically component trees or a composition of components, and the most common components used in building an application's UI are stateless. Stateless components seem like a good place to start.
 
-Just like Vue, React has more than one way to define a component. 
+The most common way to define stateless components in React is using functional component syntax. In essence you are simply defining and exporting a function which will then be passed to ```ReactDOM.render()```.
 
-Being that most SPAs are basically component trees or a composition of components, and the most common components used in building an application's UI are stateless. Stateless components seemed like a good place to start.
-
-The most common way to define stateless components in React is using functional component syntax. In essence you are simply defining and exporting a function. 
-
-The function encapsulates not only any actions the component might execute but more importantly returns the markup itself in the ```return``` statement... In JSX, which is just JavaScript at the end of the day. This can be done without the enclosing parens if it's single line or between parens for multiline, nested markup.
+The function encapsulates not only any actions the component might execute but more importantly returns the markup itself in the ```return``` statement - in JSX, which is just JavaScript at the end of the day. This can be done without the enclosing parens if it's single line or between parens for multiline, nested markup.
 
 ```JavaScript
     const component = () => return <div>Hello world!</div>
@@ -25,17 +21,17 @@ The function encapsulates not only any actions the component might execute but m
         </div>
     )
 ```
-Behind the scenes React is using ReactDOM.createElement() to render the actual markup in the DOM. Hence the need to import React.
+Behind the scenes React is using ReactDOM.createElement() to render the actual markup in the DOM, hence the need to import React.
 
-Attributes are handled a bit differently than Vue SFC. Since you are not really working with html but JSX, camelCase is used to work with attributes.
+Attributes are handled a bit differently than Vue SFCs. Since you are not really working with html but JSX, camelCase is used to work with attributes.
+
 So ```class="myComponentClass"``` is ```className="myComponentClass``` and similarly for DOM events ```onclick="handleClick"``` is ```onClick="handleClick``` in React.
 
 The last step is to export the component itself so that it may be used by other components. 
 
-Since this component will not hold any state, it is important that we pass the ```props``` argument in the arrow function assigned to the component.
+Since this component will not hold any state, it is important that we pass the ```props``` argument in the arrow function assigned to the component to access data the consumer may pass down to it.
 
 Internally, this allows ```this``` to be scoped and reference the component itself, whereby you can access its props via object dot notation.
-
 
 ## Defining stateless components in React
 
@@ -58,7 +54,7 @@ const myComponent = props => {
 export default myComponent;
 ```
 
-Now Vue uses a different approach with it's Single File Component Syntax, which allows you to define the markup, scripts, and styles in one file although this is simply a convention. You can also define the 3 in separate files and reference the syles and script in the ```.vue``` template file like you would in any html file.
+Vue uses a different approach with it's Single File Component Syntax, which allows you to define the markup, scripts, and styles in one file, although this is simply a convention. You can also define the 3 in separate files and reference the syles and script in the ```.vue``` template file just like you would in any html file.
 
 Mark up is defined in the ```<template></template>``` tag and you can directly access and manipulate props with interpolation using the double mustache ```{{}}``` which binds the data.
 
