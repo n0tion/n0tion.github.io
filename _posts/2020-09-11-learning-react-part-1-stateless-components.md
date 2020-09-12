@@ -2,11 +2,11 @@
 layout: post
 title: "Learning React Part 1: Stateless Components"
 ---
-At first glance the way components are defined in React seemed odd coming from a Vue background. Mostly due to its use of JSX, although Vue render functions can make use of JSX as well.
+At first glance the way components are defined in React seemed odd coming from a Vue background. Mostly due to its use of JSX, although Vue render functions can also make use of JSX.
 
 Just like Vue, React has more than one way to define a component. 
 
-Being that most SPAs are basically component trees or a composition of components, and the most common components used in building an applications UI are stateless. Stateless components seemed like a good place to start.
+Being that most SPAs are basically component trees or a composition of components, and the most common components used in building an application's UI are stateless. Stateless components seemed like a good place to start.
 
 The most common way to define stateless components in React is using functional component syntax. In essence you are simply defining and exporting a function. 
 
@@ -25,14 +25,14 @@ The function encapsulates not only any actions the component might execute but m
         </div>
     )
 ```
-Behind the scenes React is using ReactDOM.createElement() to render the actual markup in the DOM. Hence the need to ```import React from 'react'``` . 
+Behind the scenes React is using ReactDOM.createElement() to render the actual markup in the DOM. Hence the need to import React.
 
 Attributes are handled a bit differently than Vue SFC. Since you are not really working with html but JSX, camelCase is used to work with attributes.
 So ```class="myComponentClass"``` is ```className="myComponentClass``` and similarly for DOM events ```onclick="handleClick"``` is ```onClick="handleClick``` in React.
 
 The last step is to export the component itself so that it may be used by other components. 
 
-Since this component will not hold any state, it is important that we pass the ```props`` argument in the arrow function assigned to the component.
+Since this component will not hold any state, it is important that we pass the ```props``` argument in the arrow function assigned to the component.
 
 Internally, this allows ```this``` to be scoped and reference the component itself, whereby you can access its props via object dot notation.
 
