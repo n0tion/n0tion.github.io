@@ -2,7 +2,7 @@
 layout: post
 title: "Learning React Part 1: Stateless Components"
 ---
-How does defining stateless components in React differ from Vue? This article is the first in a series that will cover my experience learning React having worked primarily with Vue in the past.
+How does defining stateless components in React differ from Vue? This article will go over my initial observations, and is the first in a series that will cover my experience learning React having worked primarily with Vue in the past.
 
 ## Defining stateless components in React
 
